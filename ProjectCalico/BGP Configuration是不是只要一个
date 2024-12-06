@@ -15,7 +15,7 @@
 示例：一个 BGPConfiguration
 在大多数情况下，你会创建一个 BGPConfiguration 来配置集群的 BGP 路由设置。以下是一个示例：
 
-```yl
+```yaml
 apiVersion: cilium.io/v2
 kind: BGPConfiguration
 metadata:
@@ -36,7 +36,6 @@ spec:
 通常一个集群只需要一个 BGPConfiguration，因为它定义了全局的 BGP 路由行为。
 如果需要多个 BGP 对等体或多个集群间的跨网络路由，才可能需要多个 BGPConfiguration 实例。
 如果你正在使用 Cilium 或其他支持 BGP 的 CNI 插件，可以根据你的实际网络架构来决定是否需要多个配置。
-
 
 
 
