@@ -15,8 +15,7 @@
 示例：一个 BGPConfiguration
 在大多数情况下，你会创建一个 BGPConfiguration 来配置集群的 BGP 路由设置。以下是一个示例：
 
-yaml
-复制代码
+```yml
 apiVersion: cilium.io/v2
 kind: BGPConfiguration
 metadata:
@@ -30,6 +29,7 @@ spec:
       localASN: 65000
       holdTime: 90s
       password: "secure-password"
+```
 在这个例子中，配置了一个 BGP 配置，其中包括一个 BGP 对等体的配置。对于大多数单一集群的使用场景，一个 BGPConfiguration 就足够了。
 
 总结
