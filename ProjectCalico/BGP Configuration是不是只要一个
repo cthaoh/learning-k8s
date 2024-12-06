@@ -15,7 +15,7 @@
 示例：一个 BGPConfiguration
 在大多数情况下，你会创建一个 BGPConfiguration 来配置集群的 BGP 路由设置。以下是一个示例：
 
-```yml
+```yl
 apiVersion: cilium.io/v2
 kind: BGPConfiguration
 metadata:
